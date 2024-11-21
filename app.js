@@ -16,6 +16,7 @@ function weatherAPI(){
        <h1>Location: ${res.location.name},</h1> <h3>${res.location.region} ${res.location.country}</h3>
         </div>`
 })
+.catch(error=>console.log(error))
 }
 
 check.addEventListener('click', weatherAPI)
