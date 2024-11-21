@@ -6,7 +6,7 @@ let check = document.querySelector("#check");
 let div = document.querySelector("#render");
 
 function weatherAPI(){
-    fetch(`http://api.weatherapi.com/v1/current.json?key=3b561771343246e3bc7183736242111&q=${input.value}&aqi=no`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=3b561771343246e3bc7183736242111&q=${input.value}&aqi=no`)
     .then(res => res.json())
     .then((res) => {
         console.log(res)
